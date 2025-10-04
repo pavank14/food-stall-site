@@ -16,9 +16,8 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#category">Category</a></li>
-      <li><a href="#about">About Us</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      
     </ul>
   </nav>
 
@@ -42,43 +41,321 @@
   <section id="category" class="category-section">
     <h2>Categories</h2>
     <div class="category-grid">
-      <div class="category-box">Food</div>
-      <div class="category-box">Juices</div>
-      <div class="category-box">Diwali</div>
-      <div class="category-box">Games</div>
+      <div class="category-box" onclick="showMenu('food')">Food</div>
+      <div class="category-box" onclick="showMenu('juices')">Juices</div>
+      <div class="category-box" onclick="showMenu('diwali')">Diwali</div>
+      <div class="category-box" onclick="showMenu('games')">Games</div>
     </div>
   </section>
 
   <!-- ✅ Menu Items -->
   <section id="menu" class="menu-section">
     <h2>Menu Items</h2>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="src/diwali_lantern.jpg" alt="Diwali Lantern" />
-        <h3>Diwali Lantern</h3>
-        <p>Handmade eco-friendly lanterns for your home!</p>
+
+    <!-- Food -->
+    <div id="food" class="menu-container">
+      <h3>Food</h3>
+      
+      <div class="menu-scroll">
+        <div class="menu-card"><img src="src/chanabhel1.jpg"><h4>chana bhel</h4><p>Spicy & tangy flavor!</p></div>
+
       </div>
+      
+    </div>
+
+    <!-- Juices -->
+    <div id="juices" class="menu-container">
+      <h3>Juices</h3>
+   
+      <div class="menu-scroll">
+        <div class="menu-card"><img src="src/Custard Apple Juice.jpg"><h4>Custard Apple Juice</h4><p>Freshly squeezed.</p></div>
+        <div class="menu-card"><img src="src/pineapple juice.jpg"><h4>pineapple juice</h4><p>Rich & creamy.</p></div>
+  
+      </div>
+     
+    </div>
+
+    <!-- Diwali -->
+    <div id="diwali" class="menu-container">
+      <h3>Diwali Specials</h3>
+  
+      <div class="menu-scroll">
+        <div class="menu-card"><img src="src/moti nose ring.jpg"><h4>Pearl Nose Ring</h4><p>HandMade Pearl Nose Ring.</p></div>
+        <div class="menu-card"><img src="src/nose ring.jpg"><h4>Nose Ring</h4><p>HandMade Royal Style.</p></div>
+        <div class="menu-card"><img src="src/moti ring.jpg"><h4>Pearl Ring.</h4><p> HandMade Moti Ring.</p></div>
+        <div class="menu-card"><img src="src/Pearl finger chain rings.jpg"><h4>Pearl finger chain rings.</h4><p> HandMade Pearl finger chain rings.</p></div>
+      </div>
+
+    </div>
+
+    <!-- Games -->
+    <div id="games" class="menu-container">
+      <h3>Fun Games</h3>
+      
+      <div class="menu-scroll">
+        <div class="menu-card"><img src="src/buzz wire.jpg"><h4>Buzz wire </h4><p>Test your skill!</p></div>
+       
+      </div>
+      
     </div>
   </section>
+  <script></script>
 
-  <!-- ✅ About -->
-  <section id="about" class="about-section">
-    <h2>About Us</h2>
-    <p>
-      We are a team of creative students promoting sustainability through food, crafts, and fun.
-      Join us at the Eco Utsav Diwali Stall to enjoy a mix of taste, joy, and culture!
-    </p>
-  </section>
 
-  <!-- ✅ Contact -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>Visit us in the college main courtyard!</p>
-  </section>
 
-  <!-- ✅ Footer -->
-  <footer>
-<h2> You are invited .... </h2>
-  </footer>
+<section id="about" class="team-section">
+  <h2>About Us</h2>
+ <p>
+    Welcome to <strong>Eco Utsav Diwali Stall</strong> — where taste meets tradition!  
+    We serve <b>delicious food</b> and <b>refreshing juices</b> made with love,  
+    along with <b>handcrafted eco-friendly Diwali gifts</b>.  
+    All our products are made with quality ingredients and offered at the <b>best discounted prices</b>.
+  </p>
+
+<section id="team" class="team-section">
+  <h2>Our Team</h2>
+  
+
+  <div class="team-photo">
+    <img src="src/group.jpg" alt="Our Team Group Photo">
+  </div>
+
+  <div class="team-container">
+    <div class="team-column">
+      <ul>
+        <li>1. Patil Tanvi </li>
+        <li>2. Pawar Ankita </li>
+        <li>3. Pawar Smruti </li>
+        <li>4. Relekar Om </li>
+        <li>5. Saindane Tejas </li>
+        <li>6. Sarda Laxmi </li>
+        <li>7. Satpute Mansi </li>
+        <li>8. Shewale Pallavi </li>
+        <li>9. Shinde Adisha </li>
+      </ul>
+    </div>
+
+    <div class="team-column">
+      <ul>
+        
+        <li>10. Shinde Shital </li>
+        <li>11. Shivade Vishal </li>
+        <li>12. Sontakke Shivkant </li>
+        <li>13. Sonule Roshan </li>
+        <li>14. Tayade Sandesh </li>
+        <li>15. Thorat Aniket </li>
+        <li>16. Varma Durgesh </li>
+        <li>17. Yambal Shravan </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .team-section {
+    padding: 60px 20px;
+    background: #f7fff7;
+    text-align: center;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+
+  .team-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .team-photo img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .team-column {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+  }
+
+  .team-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .team-column li {
+    font-size: 1rem;
+    padding: 6px 0;
+    color: #2e7d32;
+    border-bottom: 1px dashed #c8e6c9;
+  }
+
+  .team-column li:last-child {
+    border-bottom: none;
+  }
+
+  /* 📱 Responsive but keep two columns */
+  @media (max-width: 768px) {
+    .team-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .team-column {
+      padding: 10px;
+    }
+
+    .team-column li {
+      font-size: 0.8rem;
+      padding: 4px 0;
+    }
+
+        .team-section h2 {
+        font-size: 1.4rem;
+        margin-top: -24px;
+    }
+
+    .team-desc {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-container {
+      gap: 8px;
+    }
+
+    .team-column {
+      padding: 8px;
+    }
+
+    .team-column li {
+      font-size: 0.95rem;
+      line-height: 1.2;
+    }
+  }
+</style>
+
+
+ <!-- ✅ Contact -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p class="contact-tagline">Join us for a guilt-free celebration...</p>
+
+  <div class="contact-details">
+    <p><strong>Date:</strong> Sunday, Sep 2025</p>
+    <p><strong>Time:</strong> 10:00 AM to 5:00 PM</p>
+    <p><strong>Location:</strong> PCET's architecture building</p>
+    <p><strong>Contact No.:</strong> </p>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer class="footer">
+  <p>❤️ You are heartily invited — we are waiting for you!</p>
+</footer>
+
+<style>
+ .contact-section {
+  background: #f1f8e9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.contact-tagline {
+  font-size: 1.2rem;
+  color: #558b2f;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.contact-details {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+.footer {
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1rem;
+  border-top: 2px solid #81c784;
+}
+
+@media (max-width: 768px) {
+..contact-section {
+  background: #f1f8e9;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.contact-tagline {
+  font-size: 1.2rem;
+  color: #558b2f;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-row span {
+  white-space: nowrap;
+}
+
+.footer {
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1rem;
+  border-top: 2px solid #81c784;
+}
+
+}
+</style>
+
+  <script src="script.js"></script>
 </body>
 </html>
