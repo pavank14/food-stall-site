@@ -41,9 +41,9 @@
   <section id="category" class="category-section">
     <h2>Categories</h2>
     <div class="category-grid">
-      <div class="category-box" onclick="showMenu('food')">Food</div>
-      <div class="category-box" onclick="showMenu('juices')">Juices</div>
-      <div class="category-box" onclick="showMenu('diwali')">Diwali</div>
+      <div class="category-box" onclick="showMenu('food')">Chats</div>
+      <div class="category-box" onclick="showMenu('juices')">Shakes</div>
+      <div class="category-box" onclick="showMenu('diwali')">Jewellery</div>
       <div class="category-box" onclick="showMenu('games')">Games</div>
     </div>
   </section>
@@ -54,7 +54,7 @@
 
     <!-- Food -->
     <div id="food" class="menu-container">
-      <h3>Food</h3>
+      <h3>Chats</h3>
       
       <div class="menu-scroll">
         <div class="menu-card"><img src="src/chanabhel1.jpg"><h4>chana bhel</h4><p>Spicy & tangy flavor!</p></div>
@@ -65,11 +65,12 @@
 
     <!-- Juices -->
     <div id="juices" class="menu-container">
-      <h3>Juices</h3>
+      <h3>Shakes</h3>
    
       <div class="menu-scroll">
-        <div class="menu-card"><img src="src/Custard Apple Juice.jpg"><h4>Custard Apple Juice</h4><p>Freshly squeezed.</p></div>
-        <div class="menu-card"><img src="src/pineapple juice.jpg"><h4>pineapple juice</h4><p>Rich & creamy.</p></div>
+        <div class="menu-card"><img src="src/Custard Apple Juice.jpg"><h4>Custard Apple Shake</h4><p>Freshly squeezed.</p></div>
+        <div class="menu-card"><img src="src/stobbery.jpg"><h4>Strawberry Shake</h4><p>Rich & creamy.</p></div>
+        <div class="menu-card"><img src="src/custurd.jpg"><h4> Fruit Custard</h4><p>Freshly squeezed.</p></div>
   
       </div>
      
@@ -77,13 +78,13 @@
 
     <!-- Diwali -->
     <div id="diwali" class="menu-container">
-      <h3>Diwali Specials</h3>
+      <h3>Hand-Made Jewellery</h3>
   
       <div class="menu-scroll">
         <div class="menu-card"><img src="src/moti nose ring.jpg"><h4>Pearl Nose Ring</h4><p>HandMade Pearl Nose Ring.</p></div>
         <div class="menu-card"><img src="src/nose ring.jpg"><h4>Nose Ring</h4><p>HandMade Royal Style.</p></div>
-        <div class="menu-card"><img src="src/moti ring.jpg"><h4>Pearl Ring.</h4><p> HandMade Moti Ring.</p></div>
-        <div class="menu-card"><img src="src/Pearl finger chain rings.jpg"><h4>Pearl finger chain rings.</h4><p> HandMade Pearl finger chain rings.</p></div>
+        <div class="menu-card"><img src="src/moti ring.jpg"><h4>Pearl Ring</h4><p> HandMade Moti Ring.</p></div>
+        <div class="menu-card"><img src="src/Pearl finger chain rings.jpg"><h4>Pearl finger chain rings</h4><p> Pearl finger chain rings.</p></div>
       </div>
 
     </div>
@@ -112,6 +113,80 @@
     All our products are made with quality ingredients and offered at the <b>best discounted prices</b>.
   </p>
 
+  <!-- ✅ Our Mentors Section -->
+<section id="mentors" style="text-align:center; padding:3rem 1rem; background:#f8fff9;">
+  <h2 style="color:#005e2f; margin-bottom:2rem;">Our Mentors</h2>
+  
+  <div class="mentor-container">
+    <div class="mentor-card">
+      <img src="src/mentor1.jpg" alt="Mentor 1">
+      <h4>Mr. Kunal Nikam</h4>
+    </div>
+    <div class="mentor-card">
+      <img src="src/mentor2.jpg" alt="Mentor 2">
+      <h4>Ms. Gayatri Ghule</h4>
+    </div>
+    <div class="mentor-card">
+      <img src="src/mentor3.jpg" alt="Mentor 3">
+      <h4> Ms. Rani Jadhav </h4>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ✅ Mentor Section Styling */
+.mentor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mentor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+.mentor-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.mentor-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #005e2f;
+}
+
+/* ✅ Slightly larger for mobile (3 in one row) */
+@media (max-width: 600px) {
+  .mentor-container {
+    gap: 1rem;
+  }
+  .mentor-card {
+    width: 190px;
+  }
+  .mentor-card img {
+    height: 190px;
+  }
+}
+</style>
+
+</style>
+
 <section id="team" class="team-section">
   <h2>Our Team</h2>
   
@@ -122,34 +197,33 @@
 
   <div class="team-container">
     <div class="team-column">
-      <ul>
-        <li>1. Patil Tanvi </li>
-        <li>2. Pawar Ankita </li>
-        <li>3. Pawar Smruti </li>
-        <li>4. Relekar Om </li>
-        <li>5. Saindane Tejas </li>
-        <li>6. Sarda Laxmi </li>
-        <li>7. Satpute Mansi </li>
-        <li>8. Shewale Pallavi </li>
-        <li>9. Shinde Adisha </li>
-      </ul>
+        <ul>
+            <li>1. Aniket Thorat</li>
+            <li>2. Tanvi Patil</li>
+            <li>3. Ankita Pawar</li>
+            <li>4. Smruti Pawar</li>
+            <li>5. Om Relekar</li>
+            <li>6. Tejas Saindane</li>
+            <li>7. Laxmi Sarda</li>
+            <li>8. Mansi Satpute</li>
+            <li>9. Pallavi Shewale</li>
+        </ul>
     </div>
 
     <div class="team-column">
-      <ul>
-        
-        <li>10. Shinde Shital </li>
-        <li>11. Shivade Vishal </li>
-        <li>12. Sontakke Shivkant </li>
-        <li>13. Sonule Roshan </li>
-        <li>14. Tayade Sandesh </li>
-        <li>15. Thorat Aniket </li>
-        <li>16. Varma Durgesh </li>
-        <li>17. Yambal Shravan </li>
-      </ul>
+        <ul>
+            <li>10. Adisha Shinde</li>
+            <li>11. Shital Shinde</li>
+            <li>12. Vishal Shivade</li>
+            <li>13. Shivkant Sontakke</li>
+            <li>14. Roshan Sonule</li>
+            <li>15. Sandesh Tayade</li>
+            <li>16. Durgesh Varma</li>
+            <li>17. Shravan Yambal</li>
+        </ul>
     </div>
-  </div>
-</section>
+</div>
+
 
 <style>
   .team-section {
@@ -261,10 +335,16 @@
   <p class="contact-tagline">Join us for a guilt-free celebration...</p>
 
   <div class="contact-details">
-    <p><strong>Date:</strong> Sunday, Sep 2025</p>
-    <p><strong>Time:</strong> 10:00 AM to 5:00 PM</p>
     <p><strong>Location:</strong> PCET's architecture building</p>
-    <p><strong>Contact No.:</strong> </p>
+    <p><strong>Contact No.:+91 89562 49685:</strong> </p>
+     <p><strong>Email id: aniket.at10@gmail.com:</strong> </p>
+      <p class="social-icon">
+      <a href="https://www.instagram.com/ecoutsav_?igsh=bWw2bnhvenRxN3Fl" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+      </a>
+      
+    </p>
+    
   </div>
 </section>
 
@@ -313,10 +393,11 @@
 }
 
 @media (max-width: 768px) {
-..contact-section {
-  background: #f1f8e9;
-  padding: 30px 20px;
-  text-align: left;
+.contact-section {
+    background: #f1f8e9;
+    padding: 70px 3px;
+    margin-top: 55px;
+    text-align: center;
 }
 
 .contact-section h2 {
@@ -344,14 +425,17 @@
   white-space: nowrap;
 }
 
-.footer {
-  background: #2e7d32;
-  color: #fff;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 1rem;
-  border-top: 2px solid #81c784;
-}
+    .footer {
+        background: #2e7d32;
+        color: #fff;
+        text-align: center;
+        width: 342px;
+        margin-left: -41px;
+        padding: 15px 10px;
+        font-size: 1rem;
+        margin-bottom: -122px;
+        border-top: 2px solid #81c784;
+    }
 
 }
 </style>
